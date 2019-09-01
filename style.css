@@ -1,0 +1,87 @@
+#container{
+	display: grid;
+	margin: 0 auto;
+	grid-template-columns: repeat(4,[col-start]1fr);
+	border: solid black 4px;
+	border-radius: 10px;
+	width: 200px;
+	height: 300px;
+	padding: 5px 5px;
+	background-color: gray;
+
+}
+
+h3{
+	display: inline-block;
+}
+
+#inputBox{
+	grid-column-start: 1;
+	grid-column-end: 5;
+	text-align: right;  
+	background: lightgray;
+	margin: 0px 0px;
+	border: solid black 2px;
+	height: 70px;
+
+}
+
+p{
+	font-family: 'Jura', sans-serif;
+}
+
+.right{
+	float: right;
+}
+.left{
+	float: left;
+	margin-right: 3px; 
+}
+
+#styleMarker{
+	visibility: hidden;
+}
+button{
+	font-family: 'Days One', sans-serif;
+	display: inline-block;
+	margin: 2px 2px;
+	border-radius: 4px;
+
+}
+
+#clear{
+	grid-row: 2 / span 1;
+	grid-column: 1 / span 1;
+
+}
+
+#plus{
+	grid-row: 2 / span 1;
+	grid-column: 2 / span 1;	
+}
+
+#minus{
+	grid-row: 2 / span 1;
+	grid-column: 3 / span 1;	
+}
+#multiply{
+	grid-row: 2 / span 1;
+	grid-column: 4 / span 1;	
+}
+#divide{
+	grid-row: 3 / span 1;
+	grid-column: 4 / span 1;	
+}
+#equal {
+	grid-row: 4 / span 3;
+	grid-column: 4 / span 1;
+}
+#num0{
+	grid-column: 2 / span 1;
+	
+
+}
+
+.number{
+	background-color: #f18b5a;
+}
